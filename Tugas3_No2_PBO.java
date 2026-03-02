@@ -18,7 +18,9 @@ public class Tugas3_No2_PBO {
             System.out.print ("Maaf , ada kesalahan di masukan bilangan");
         } else {
             for (int i = batasAwal; i <= batasAkhir; i++) {
-                jumlahGanjil++;
+                if (i %2 != 0) {
+                    jumlahGanjil++;
+                }
             }
             System.out.print ("Banyaknya bilangan ganjil " + jumlahGanjil);
         }
